@@ -6,7 +6,7 @@
 1 全局安装
 
 ```bash
-npm install -g npm install -g github:meooxx/uniapp-project-cli
+npm install -g github:meooxx/uniapp-project-cli
 
 ```
 
