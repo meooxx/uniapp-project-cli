@@ -30,6 +30,7 @@ const parsedDir = path.posix.parse(cmdDir)
 const cwd = process.cwd()
 const projectDir = path.resolve(cwd, path.format(parsedDir))
 const script = scripts[argv.cmd]
+process.chdir(path.resolve(__dirname))
 
 const { error } = require('@vue/cli-shared-utils')
 if (!script) {
