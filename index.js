@@ -11,7 +11,9 @@ const argv = yargs(hideBin(process.argv))
   .command('$0', 'the default command', (yargs) => {
     yargs.positional('path', {
       describe: '*inux 风格项目路径, 绝对路径或者相对运行时的路径',
-      type: 'string'
+      defaultDescription: "*inux 风格项目路径, 绝对路径或者相对运行时的路径",
+      type: 'string',
+      demandOption: true,
     })
   })
   .demandOption(['cmd'])
