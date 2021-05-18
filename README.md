@@ -33,9 +33,9 @@ unilaunch . -c dev:mp-weixin
 
 ## Cli
 `unilaunch:` 声明在 `bin` 字段中.`-g`安装则全局使用  
-`path:` 需要编译的 `project` 目录, 支持绝对路径和相对路径. `windows` 和 `macos` 使用相同路径格式. 即在`windows`中`macos`都要指定 `/User/xxx/project`这种类型路径.`相对路径` 基于当前路径解析. 比如在`project/a` 下执行 `./b` , 解析为 `project/b`  
+`path:` 需要编译的 `project` 目录, 支持绝对路径和相对路径. `windows` 和 `macos` 使用相同路径格式. 即在`windows`中`macos`都要指定 `/User/xxx/project`这种类型路径.`相对路径` 基于当前路径解析. 比如在`project` 下执行 `./b` , 解析为 `project/b`  
 `-c, --cmd:` 一一对应`vue-cli`创建的`uniapp`项目下`package.json`中`scripts`里的字段. 如 `dev:h5`, `dev:mp-weixin` 等等  
-实际场景 如由项目 `/User/xxxproject/b`, 想要启动项目 `b`, 可以进入到 `b` 目录中执行 `unilaunch . -c dev:h5`, 或者 `unilaunch /User/xxxproject/b -c dev:h5`
+实际场景 如由项目 `/User/xxx/project/b`, 想要启动项目 `b`, 可以进入到 `b` 目录中执行 `unilaunch . -c dev:h5`, 或者 `unilaunch /User/xxxproject/b -c dev:h5`
 
 ## 进度
 
