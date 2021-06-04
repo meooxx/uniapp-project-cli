@@ -45,6 +45,7 @@
     "babel-plugin-import": "^1.11.0",
     "caniuse-lite": "^1.0.30001228",
     "flyio": "^0.6.2",
+    "jest": "^25.4.0",
     "less-loader": "^4.1.0",
     "module-alias": "^2.1.0",
     "postcss-comment": "^2.0.0",
@@ -61,7 +62,6 @@
     "vue-property-decorator": "^7.2.0",
     "vue-template-compiler": "^2.6.11",
     "vuex": "^3.0.1",
-    "yargs": "^17.0.1",
-    "jest": "^25.4.0"
+    "yargs": "^17.0.1"
   }
 }
