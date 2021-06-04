@@ -1,7 +1,7 @@
 {
-  "name": "uniapp-oss",
-  "version": "0.1.0",
-  "private": true,
+  "name": "uniapp-project-cli",
+  "version": "0.2.0",
+  "private": false,
   "scripts": {
     "serve": "npm run dev:h5",
     "build": "npm run build:h5",

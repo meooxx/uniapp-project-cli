@@ -61,6 +61,7 @@
     "vue-property-decorator": "^7.2.0",
     "vue-template-compiler": "^2.6.11",
     "vuex": "^3.0.1",
-    "yargs": "^17.0.1"
+    "yargs": "^17.0.1",
+    "jest": "^25.4.0"
   }
 }
