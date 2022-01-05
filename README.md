@@ -7,6 +7,9 @@
 
 ```bash
 npm install -g github:meooxx/uniapp-project-cli
+# 如果你已将项目维护到内网gitlab
+# npm install -g git+ssh://仓库ssh-url
+# npm install -g git+https://仓库https
 
 ```
 
@@ -54,18 +57,18 @@ path 不区分windows使用, 统一为/root/path/to/project, or ./project
 ## Cons  
 
 1. 没有`window`设备, 待验证
-2. `sass`, `sass-loader`: `sass`使用 `Dart Sass`, `sass-loader`, 可能会因为国内网络原因挂壁, 请自行解决
+2. `sass`, `sass-loader`: 使用 `Dart Sass` 替换`sass`, `sass-loader`, 可能会因为国内网络原因挂壁, 请自行解决;有部分不常用`sass`语法有问题如 `/deep/`。 可自行决定`sass`和`sass-loader`
 
 ## Cli 详细说明
 `unilaunch:` 声明在 `bin` 字段中.`-g`安装则全局使用  
 `path:` 需要编译的 `project` 目录, 支持绝对路径和相对路径. `windows` 和 `macos` 使用相同路径格式. 即在`windows`中`macos`都要指定 `/User/xxx/project`这种类型路径.`相对路径` 基于当前路径解析. 比如在`project` 下执行 `./b` , 解析为 `project/b`  
 `-c, --cmd:` 一一对应`vue-cli`创建的`uniapp`项目下`package.json`中`scripts`里的字段. 如 `dev:h5`, `dev:mp-weixin` 等等  
-实际场景 如由项目 `/User/xxx/project/b`, 想要启动项目 `b`, 可以进入到 `b` 目录中执行 `unilaunch . -c dev:h5`, 或者 `unilaunch /User/xxxproject/b -c dev:h5`
+实际场景 如有项目 `/User/xxx/project/b`, 想要启动项目 `b`, 可以进入到 `b` 目录中执行 `unilaunch . -c dev:h5`, 或者 `unilaunch /User/xxxproject/b -c dev:h5`
 
 ## 进度
-- [ ] 可以迁移指定项目的时候发布正式版和npm版本 
-- [ ] 基本无痛迁移到 `vue-cli`  
+- [ ] 完成所有功能并发布正式版和发布到`npm` 
+- [ ] 可以在项目维度自行维护`package.json`依赖
 - [x] 100% 支持vue-cli项目中scripts字段
-- [x] 启动项目
+- [x] 正常启动项目
 
 
